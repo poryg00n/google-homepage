@@ -16,21 +16,49 @@ a:hover {
     bottom: 0;
     left: 0;
 }
- .nav {
+
+.nav a{
+            
+            color:  rgba(0,0,0,.55);
+        padding-right: 15px;
+}
+.nav{
+
+    top: -295px;
+    right: 0;
+    width: 100%;
+}
+#gbw{
+    width:1171px;
+    height:0px;
+}
+.r{
+    padding-right: 15px;
+}
+ .nava {
      color: #444;
      text-align: right;
-     padding-left: 30px;
-     padding-right: 30px;
      position: relative;
      align-items: center;
      justify-content: flex-end;
      top: 15px;
      right: 0;
-     width: 100%;
+     width: 99%;
      z-index: 1000;
+     font-size: 13px;
 
  }
 
+ .fbar a{
+     display: inline-block;
+     color: #666;
+     margin: 2px 10px 0;
+    font-size: small;
+ }
+
+#rightfoot{
+    float: right;
+}
  a {
      font-size: 13px;
      color: #444;
@@ -41,21 +69,81 @@ img{
 }
 
 .body {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: block;
+    text-align: center;
 }
 
 #user img{
-    height:30px
+    height:30px;
+    border-radius: 100%;
 }
 
 #logo{
-    width: 77%;
-    height: inherit;
+    height: 92px;
+    width: 272px;
+    padding-top: 109px;
 }
 
 body, td, a, p, .h {
     font-family: arial,sans-serif;
+}
+
+#searchbox {
+    -moz-box-shadow:    0px 5px 0px 0px #ccc
+    -webkit-box-shadow: 0px 5px 0px 0px #ccc
+    box-shadow:         0px 5px 0px 0px #ccc
+}
+
+input{
+    height: 36px;
+line-height: 27px;
+}
+
+#click input{
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+#click input:hover {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+background-color: #f8f8f8;
+background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+background-image: -o-linear-gradient(top,#f8f8f8,#f1f1f1);
+border: 1px solid #c6c6c6;
+box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+color: #222;
+}
+
+#searchbox {
+    padding-bottom: 2px;
+padding-top: 3px;
+margin-top: -3px;
+width: 632px;
+}
+form{
+    padding-top: 28px;
+}
+
+div {
+    display: block;
+}
+
+#click {
+    padding-top: 18px;
 }
